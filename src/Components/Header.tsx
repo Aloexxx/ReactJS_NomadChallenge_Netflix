@@ -138,7 +138,7 @@ function Header(){
     const {register,handleSubmit} = useForm<IForm>();
     const onValid =(data:IForm)=>{
         // window.location.replace(`/search?keyword=${data.keyword}`);
-        history(`/search?keyword=${data.keyword}`);
+        history(`${process.env.PUBLIC_URL}/search?keyword=${data.keyword}`);
     };
     return (
         <Nav 
