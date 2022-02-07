@@ -102,7 +102,7 @@ function TvLatest(){
     },[loadingLatest])
     const toggleLeaving = ()=>setLeaving((prev)=>!prev)
     const onBoxClicked = (tvId:number)=>{
-        history(`/tv/${"popular"}/${tvId}`);
+        history(`${process.env.PUBLIC_URL}/tv/${"popular"}/${tvId}`);
     }
     const increaseIndex=()=>{
         if(dataLatest){

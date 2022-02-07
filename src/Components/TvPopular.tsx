@@ -104,7 +104,7 @@ function TvPopular(){
 
     const toggleLeaving = ()=>setLeaving((prev)=>!prev)
     const onBoxClicked = (movieId:number)=>{
-        history(`/tv/${"popular"}/${movieId}`);
+        history(`${process.env.PUBLIC_URL}/tv/${"popular"}/${movieId}`);
     }
     const increaseIndex=()=>{
         if(dataPopular){

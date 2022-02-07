@@ -115,7 +115,7 @@ const MovieNow = ()=>{
     }
     const toggleLeaving = ()=>setLeaving((prev)=>!prev)
     const onBoxClicked = (movieId:number)=>{
-        history(`/movies/${"now"}/${movieId}`);
+        history(`${process.env.PUBLIC_URL}/movies/${"now"}/${movieId}`);
     }
     return(
         <Slider>

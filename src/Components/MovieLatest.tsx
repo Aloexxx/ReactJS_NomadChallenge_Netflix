@@ -115,7 +115,7 @@ const MovieLatest = ()=>{
     }
     const toggleLeaving = ()=>setLeaving((prev)=>!prev)
     const onBoxClicked = (movieId:number)=>{
-        history(`/movies/${"latest"}/${movieId}`);
+        history(`${process.env.PUBLIC_URL}/movies/${"latest"}/${movieId}`);
     }
     return(
         <>

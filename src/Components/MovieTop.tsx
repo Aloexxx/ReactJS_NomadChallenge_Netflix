@@ -115,7 +115,7 @@ const MovieTop = ()=>{
     }
     const toggleLeaving = ()=>setLeaving((prev)=>!prev)
     const onBoxClicked = (movieId:number)=>{
-        history(`/movies/${"top"}/${movieId}`);
+        history(`${process.env.PUBLIC_URL}/movies/${"top"}/${movieId}`);
     }
     return(
         <>

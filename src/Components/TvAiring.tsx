@@ -100,7 +100,7 @@ function TvAiring(){
 
     const toggleLeaving = ()=>setLeaving((prev)=>!prev)
     const onBoxClicked = (movieId:number)=>{
-        history(`/tv/${"airing"}/${movieId}`);
+        history(`${process.env.PUBLIC_URL}/tv/${"airing"}/${movieId}`);
     }
     const increaseIndex=()=>{
         if(dataAiring){

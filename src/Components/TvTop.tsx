@@ -101,7 +101,7 @@ function TvTop(){
 
     const toggleLeaving = ()=>setLeaving((prev)=>!prev)
     const onBoxClicked = (tvId:number)=>{
-        history(`/tv/${"top"}/${tvId}`);
+        history(`${process.env.PUBLIC_URL}/tv/${"top"}/${tvId}`);
     }
     const increaseIndex=()=>{
         if(dataTop){
