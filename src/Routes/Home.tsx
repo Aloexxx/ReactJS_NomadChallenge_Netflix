@@ -87,7 +87,7 @@ function Home(){
     const history=useNavigate();
     const onOverlayClick=()=>history(`${process.env.PUBLIC_URL}/`);
     const {scrollY} =useViewportScroll();
-    const bigMovieMatch = useMatch(`/movies/:category/:movieId`);
+    const bigMovieMatch = useMatch(`${process.env.PUBLIC_URL}/movies/:category/:movieId`);
     const [more,setMore] = useState(false);
     const {data:dataNow,isLoading:loadingNow} = useQuery<IGetMoviesResult>(["movies","nowPlaying"],getMoviesNowPlaying)
     const {data:dataLatest,isLoading:loadingLatest} = useQuery<IGetMoviesResult>(["movies","latest"],getMoviesLatest)

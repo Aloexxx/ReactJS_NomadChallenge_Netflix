@@ -115,7 +115,7 @@ const MovieUp = ()=>{
     }
     const toggleLeaving = ()=>setLeaving((prev)=>!prev)
     const onBoxClicked = (movieId:number)=>{
-        history(`/movies/${"up"}/${movieId}`);
+        history(`${process.env.PUBLIC_URL}/movies/${"up"}/${movieId}`);
     }
     useEffect(()=>{
         isLoading?null:console.log(data,"data123")
