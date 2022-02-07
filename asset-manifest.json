@@ -1,10 +1,10 @@
 {
   "files": {
-    "main.js": "/ReactJS_NomadChallenge_Netflix/static/js/main.bc81f92c.js",
+    "main.js": "/ReactJS_NomadChallenge_Netflix/static/js/main.f1e1a43f.js",
     "index.html": "/ReactJS_NomadChallenge_Netflix/index.html",
-    "main.bc81f92c.js.map": "/ReactJS_NomadChallenge_Netflix/static/js/main.bc81f92c.js.map"
+    "main.f1e1a43f.js.map": "/ReactJS_NomadChallenge_Netflix/static/js/main.f1e1a43f.js.map"
   },
   "entrypoints": [
-    "static/js/main.bc81f92c.js"
+    "static/js/main.f1e1a43f.js"
   ]
 }
