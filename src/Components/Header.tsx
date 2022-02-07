@@ -106,8 +106,8 @@ interface IForm{
 
 function Header(){
     const [searchOpen,setSearchOpen] = useState(false);
-    const homeMatch = useMatch("/")
-    const tvMatch = useMatch("/tv")
+    const homeMatch = useMatch(`${process.env.PUBLIC_URL}/`)
+    const tvMatch = useMatch(`${process.env.PUBLIC_URL}/tv`)
     const inputAnimation = useAnimation();
     const navAnimation = useAnimation();
     const { scrollY } = useViewportScroll();
@@ -160,12 +160,12 @@ function Header(){
                 </Logo>
                 <Items>
                     <Item>
-                        <Link to="/">
+                        <Link to={`${process.env.PUBLIC_URL}/`}>
                             Home {homeMatch&&<Circle layoutId="circle"/>}
                         </Link>
                     </Item>
                     <Item>
-                        <Link to="/tv">
+                        <Link to={`${process.env.PUBLIC_URL}/tv`}>
                             Tv Shows {tvMatch&&<Circle layoutId="circle"/>}
                         </Link>
                     </Item>
