@@ -84,9 +84,9 @@ const BigOverView = styled.div`
 
 function Tv(){
     const history=useNavigate();
-    const onOverlayClick=()=>history("/tv");
+    const onOverlayClick=()=>history(`${process.env.PUBLIC_URL}/tv`);
     const {scrollY} =useViewportScroll();
-    const bigTvMatch = useMatch("/tv/:category/:tvId");
+    const bigTvMatch = useMatch(`${process.env.PUBLIC_URL}/tv/:category/:tvId`);
     const [more,setMore] = useState(false);
     const {data:dataLatest,isLoading:loadingLatest} = useQuery(["tv","latest"],getTvLatest);
     const {data:dataTop,isLoading:loadingTop} = useQuery<IGetTvResult>(["tv","top"],getTvTop);
